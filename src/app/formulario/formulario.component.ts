@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
 
+  vencimento: Date;
+  ate: Date;
+
   constructor() { }
 
   ngOnInit(): void {

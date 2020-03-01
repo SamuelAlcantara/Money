@@ -12,6 +12,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PesquisaPessoaComponent } from './pesquisa-pessoa/pesquisa-pessoa.component';
 import { TabelaPessoaComponent } from './tabela-pessoa/tabela-pessoa.component';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -24,6 +25,7 @@ import { TabelaPessoaComponent } from './tabela-pessoa/tabela-pessoa.component';
   ],
   imports: [
     BrowserModule,
+    BrowserAnimationsModule,
     InputTextModule,
     ButtonModule,
     TableModule,

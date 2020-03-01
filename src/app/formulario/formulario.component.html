@@ -8,17 +8,11 @@
   </div>
   <div class="ui-g-3 ui-fluid">
     <label>Vencimento</label>
-    <div class="ui-inputgroup">
-      <input type="text" pInputText>
-      <button pButton type="button" icon="pi pi-calendar" class="ui-button-warn"></button>
-    </div>
+    <p-calendar [(ngModel)]="vencimento" [showIcon]="true" dateFormat="dd/mm/yy"></p-calendar>
   </div>
   <div class="ui-g-3 ui-fluid">
     <label>Até</label>
-    <div class="ui-inputgroup">
-      <input type="text" pInputText>
-      <button pButton type="button" icon="pi pi-calendar" class="ui-button-warn"></button>
-    </div>
+    <p-calendar [(ngModel)]="ate" [showIcon]="true" dateFormat="dd/mm/yy"></p-calendar>
   </div>
 </div>
 <div class="ui-g-2">
