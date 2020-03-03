@@ -20,7 +20,7 @@ export class TabelaPessoaComponent implements OnInit {
         nome: 'Sebastião', cidade: 'São Luís', estado: 'MA', status: 'Ativo'
       },
       {
-        nome: 'Eunice', cidade: 'São luís', estado: 'MA', status: 'Ativo'
+        nome: 'Eunice', cidade: 'São Luís', estado: 'MA', status: 'Ativo'
       },
       {
         nome: 'Elyakin', cidade: 'Bom Jardim', estado: 'MA', status: 'Ativo'

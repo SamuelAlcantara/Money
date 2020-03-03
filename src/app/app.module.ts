@@ -1,18 +1,20 @@
-import { InputTextModule } from 'primeng/inputtext';
-import {ButtonModule} from 'primeng/button';
-import {TableModule} from 'primeng/table';
-import {CalendarModule} from 'primeng/calendar';
-import {TooltipModule} from 'primeng/tooltip';
-import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import {PaginatorModule} from 'primeng/paginator';
+import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { ButtonModule } from 'primeng/button';
+import { CalendarModule } from 'primeng/calendar';
+import { DropdownModule } from 'primeng/dropdown';
+import { InputTextModule } from 'primeng/inputtext';
+import { PaginatorModule } from 'primeng/paginator';
+import { TableModule } from 'primeng/table';
+import { TooltipModule } from 'primeng/tooltip';
 import { AppComponent } from './app.component';
-import { TableComponent } from './table/table.component';
 import { FormularioComponent } from './formulario/formulario.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PesquisaPessoaComponent } from './pesquisa-pessoa/pesquisa-pessoa.component';
 import { TabelaPessoaComponent } from './tabela-pessoa/tabela-pessoa.component';
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+import { TableComponent } from './table/table.component';
+import { TesteComponent } from './teste/teste.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     FormularioComponent,
     NavbarComponent,
     PesquisaPessoaComponent,
-    TabelaPessoaComponent
+    TabelaPessoaComponent,
+    TesteComponent
   ],
   imports: [
     BrowserModule,
@@ -31,7 +34,8 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     TableModule,
     PaginatorModule,
     CalendarModule,
-    TooltipModule
+    TooltipModule,
+    DropdownModule
   ],
   providers: [],
   bootstrap: [AppComponent]
