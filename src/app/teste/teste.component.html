@@ -1,4 +1,11 @@
 <div class="container">
+    <div class="alert alert-danger" *ngIf="usuarioForm.invalid">
+        Preencha todos os campos corretamente.
+    </div>
+    <div class="ui-fluid">
+        {{cliente | json}} <br>
+        {{usuarioForm.valid}}
+    </div>
     <form #usuarioForm="ngForm" (ngSubmit)="salvar(usuarioForm)">
         <div class="ui-g">
             <div class="ui-g-12">
@@ -6,21 +13,40 @@
             </div>
             <div class="ui-g-12 ui-fluid">
                 <label>Nome:</label>
-                <input pInputText type="text" name="nome" ngModel>
+                <input pInputText type="text" name="nome" ngModel required minlength="6" autocomplete="off" #nome="ngModel">
+                <!-- [(ngModel)]="cliente.nome"-->
+                <div *ngIf="nome.hasError('required') && nome.touched" style="color: red;">
+                    Enter a name.
+                </div>
+                <div *ngIf="nome.hasError('minlength') && nome.touched" style="color: red;">
+                    Enter a valid name.
+                </div>
             </div>
             <div class="ui-g-12 ui-fluid">
                 <label>Email:</label>
-                <input pInputText type="email" name="email" ngModel>
+                <input pInputText type="email" name="email" ngModel required email autocomplete="off" #email="ngModel">
+                <!-- [(ngModel)]="cliente.email"-->
+                <div *ngIf="email.hasError('required') && email.touched"  style="color: red;">Enter a email address.</div>
+                <div *ngIf="email.hasError('email') && email.touched" style="color: red;">Enter a valid email address.</div>
             </div>
-            <div class="form-group ui-g-12">
+            <div class="form-group ui-g-4">
                 <label>Profissão:</label>
-                <select class="form-control ui-g-12" name="profissao" ngModel>
-                    <option value="">Selecione</option>
-                    <option *ngFor="let profissao of profissoes1" [value]="profissao">{{profissao}}</option>
+                <select class="form-control ui-g-4" name="profissao" ngModel required #profissao="ngModel">
+                    <!-- [(ngModel)]="cliente.profissao"-->
+                    <option value="">Select a Profession</option>
+                    <option *ngFor="let profissao of profissoes" [value]="profissao">
+                        {{profissao}}
+                    </option>
                 </select>
+                <div *ngIf="profissao.hasError('required') && profissao.touched" style="color: red;">
+                    Escolha uma profissão.
+                </div>
             </div>
         </div>
-        <button pButton type="submit" class="btn btn-primary" label="Salvar" icon="pi pi-save"></button>
+        <div class="ui-g-2">
+            <button  pButton type="submit" label="Salvar" icon="pi pi-save"
+                [disabled]="!usuarioForm.valid">
+            </button>
+        </div>
     </form>
-    
 </div>
