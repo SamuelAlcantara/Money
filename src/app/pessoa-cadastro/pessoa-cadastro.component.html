@@ -5,23 +5,23 @@
         </div>
         <div class="ui-g-12">
             <label>Nome:</label>
-            <input type="text" pInputText>
+            <input type="text" pInputText required>
         </div>
         <div class="ui-g-9">
             <label>Logradouro:</label>
-            <input type="text" pInputText>
+            <input type="text" pInputText required>
         </div>
         <div class="ui-g-3">
             <label>Número:</label>
-            <input type="text" pInputText>
+            <input type="text" pInputText required>
         </div>
         <div class="ui-g-4">
             <label>Complemento:</label>
-            <input type="text" pInputText>
+            <input type="text" pInputText required>
         </div>
         <div class="ui-g-4">
             <label>Bairro:</label>
-            <input type="text" pInputText>
+            <input type="text" pInputText required>
         </div>
         <div class="ui-g-4">
             <label>CEP:</label>
@@ -29,11 +29,11 @@
         </div>
         <div class="ui-g-8">
             <label>Cidade:</label>
-            <input type="text" pInputText>
+            <input type="text" pInputText required>
         </div>
         <div class="ui-g-4">
             <label>Estado:</label>
-            <p-dropdown [options]="estados" placeholder="Selecione o Estado" autoWidth="false" filter="true"></p-dropdown>
+            <p-dropdown [options]="estados" placeholder="Selecione o Estado" autoWidth="false" filter="true" required></p-dropdown>
         </div>
         <div class="ui-g-1">
             <p-button icon="pi pi-save" label="Salvar"></p-button>

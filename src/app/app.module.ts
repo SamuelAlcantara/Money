@@ -14,24 +14,24 @@ import { SelectButtonModule } from 'primeng/selectbutton';
 import { TableModule } from 'primeng/table';
 import { TooltipModule } from 'primeng/tooltip';
 import { AppComponent } from './app.component';
-import { FormularioComponent } from './formulario/formulario.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { NavbarComponent } from './navbar/navbar.component';
+import { PesquisaLancamentoComponent } from './pesquisa-lancamento/pesquisa-lancamento.component';
 import { PesquisaPessoaComponent } from './pesquisa-pessoa/pesquisa-pessoa.component';
 import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
+import { TabelaLancamentoComponent } from './tabela-lancamento/tabela-lancamento.component';
 import { TabelaPessoaComponent } from './tabela-pessoa/tabela-pessoa.component';
-import { TableComponent } from './table/table.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    TableComponent,
-    FormularioComponent,
     NavbarComponent,
     PesquisaPessoaComponent,
     TabelaPessoaComponent,
     LancamentoCadastroComponent,
-    PessoaCadastroComponent
+    PessoaCadastroComponent,
+    TabelaLancamentoComponent,
+    PesquisaLancamentoComponent
   ],
   imports: [
     BrowserModule,

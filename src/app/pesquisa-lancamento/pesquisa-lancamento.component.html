@@ -1,0 +1,22 @@
+<div class="container">
+    <div class="ui-g">
+      <div class="ui-g-12">
+        <h1>Lançamentos</h1>
+      </div>
+      <div class="ui-g-12 ui-fluid">
+        <label>Descrição:</label>
+        <input pInputText type="text" />
+      </div>
+      <div class="ui-g-3 ui-fluid">
+        <label>Vencimento:</label>
+        <p-calendar [(ngModel)]="vencimento" [showIcon]="true" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+      <div class="ui-g-3 ui-fluid">
+        <label>Até:</label>
+        <p-calendar [(ngModel)]="ate" [showIcon]="true" dateFormat="dd/mm/yy"></p-calendar>
+      </div>
+    </div>
+    <div class="ui-g-2">
+      <button pButton type="button" label="Pesquisar" icon="pi pi-search"></button>
+    </div>
+  </div>
