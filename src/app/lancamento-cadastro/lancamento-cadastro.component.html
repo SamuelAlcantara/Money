@@ -19,14 +19,16 @@
             </div>
             <div class="ui-g-9 ui-fluid">
                 <label>Descrição:</label>
-                <input pInputText type="text">
+                <input pInputText type="text" name="descricao" ngModel 
+                    #descricao="ngModel"required minlength="5">
             </div>
             <div class="ui-g-3 ui-fluid">
                 <label>Valor:</label>
                 <div class="ui-inputgroup">
                     <span class="ui-inputgroup-addon">R$</span>
                     <input type="text" pInputText placeholder="0.00" currencyMask 
-                    [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }">
+                    [options]="{ prefix: 'R$ ', thousands: '.', decimal: ',' }"
+                    name="valor" ngModel #valor="ngModel" required>
                 </div>
             </div>
             <div class="form-group ui-g-6 ui-fluid">

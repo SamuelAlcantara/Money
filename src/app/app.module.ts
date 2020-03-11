@@ -1,4 +1,5 @@
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 import { BrowserModule } from '@angular/platform-browser';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
@@ -7,6 +8,7 @@ import { CurrencyMaskModule } from 'ng2-currency-mask';
 import { ButtonModule } from 'primeng/button';
 import { CalendarModule } from 'primeng/calendar';
 import { DropdownModule } from 'primeng/dropdown';
+import { InputMaskModule } from 'primeng/inputmask';
 import { InputTextModule } from 'primeng/inputtext';
 import { InputTextareaModule } from 'primeng/inputtextarea';
 import { PaginatorModule } from 'primeng/paginator';
@@ -19,6 +21,7 @@ import { FormularioComponent } from './formulario/formulario.component';
 import { LancamentoCadastroComponent } from './lancamento-cadastro/lancamento-cadastro.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { PesquisaPessoaComponent } from './pesquisa-pessoa/pesquisa-pessoa.component';
+import { PessoaCadastroComponent } from './pessoa-cadastro/pessoa-cadastro.component';
 import { TabelaPessoaComponent } from './tabela-pessoa/tabela-pessoa.component';
 import { TableComponent } from './table/table.component';
 import { TesteComponent } from './teste/teste.component';
@@ -32,7 +35,8 @@ import { TesteComponent } from './teste/teste.component';
     PesquisaPessoaComponent,
     TabelaPessoaComponent,
     TesteComponent,
-    LancamentoCadastroComponent
+    LancamentoCadastroComponent,
+    PessoaCadastroComponent
   ],
   imports: [
     BrowserModule,
@@ -46,7 +50,9 @@ import { TesteComponent } from './teste/teste.component';
     DropdownModule,
     InputTextareaModule,
     SelectButtonModule,
-    CurrencyMaskModule
+    CurrencyMaskModule,
+    InputMaskModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
