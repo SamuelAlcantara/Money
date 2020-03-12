@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tabela-lancamento',
-  templateUrl: './tabela-lancamento.component.html',
-  styleUrls: ['./tabela-lancamento.component.css']
+  selector: 'app-lancamento-tabela',
+  templateUrl: './lancamento-tabela.component.html',
+  styleUrls: ['./lancamento-tabela.component.css']
 })
-export class TabelaLancamentoComponent implements OnInit {
+export class LancamentoTabelaComponent implements OnInit {
   lancamentos = [];
   constructor() { }
 

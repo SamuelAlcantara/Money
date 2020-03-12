@@ -1,11 +1,11 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-tabela-pessoa',
-  templateUrl: './tabela-pessoa.component.html',
-  styleUrls: ['./tabela-pessoa.component.css']
+  selector: 'app-pessoa-tabela',
+  templateUrl: './pessoa-tabela.component.html',
+  styleUrls: ['./pessoa-tabela.component.css']
 })
-export class TabelaPessoaComponent implements OnInit {
+export class PessoaTabelaComponent implements OnInit {
 
   pessoas = [];
 
@@ -66,5 +66,4 @@ export class TabelaPessoaComponent implements OnInit {
       }
     ];
   }
-
 }
